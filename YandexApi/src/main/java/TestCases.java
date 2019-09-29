@@ -22,7 +22,7 @@ class TestCases
     void init()
     {
         ApiKey yandexApiKey = new ApiKey("X-Yandex-API-Key","2ad3fbbe-94df-4525-ade5-01ec6db1403a");
-        yandexApiTest = new yandexApiTest("https://api.weather.yandex.ru/v1/forecast", yandexApiKey );
+        yandexApiTest = new yandexApiTest("https://api.weather.yandex.ru/v1/forecast", yandexApiKey);
 
         queryParams = new HashMap<>();
         queryParams.put("lat", "55.75396");
@@ -74,7 +74,7 @@ class TestCases
     }
 
     @Test
-    void checklon()
+    void checkLon()
     {
         String expected = queryParams.get("lon");
 
